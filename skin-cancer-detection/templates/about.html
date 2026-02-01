@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Skin Cancer Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-microscope"></i>
+                <span>Skin Cancer Detection</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about" class="active">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container about-page">
+        <section class="about-hero">
+            <h1>About the Project</h1>
+            <p class="lead">Deep Learning Image Classification for Skin Cancer Detection</p>
+        </section>
+
+        <section class="about-content">
+            <div class="content-card">
+                <h2><i class="fas fa-info-circle"></i> Problem Statement Overview</h2>
+                <p><strong>Problem Statement ID:</strong> PS 18</p>
+                <p>
+                    The challenge is to design an image classification system that can accurately identify 
+                    and classify images into predefined categories using deep learning techniques such as 
+                    Convolutional Neural Networks (CNNs). In the context of healthcare, this problem is 
+                    applied to skin lesion images, where visual patterns must be learned to distinguish 
+                    between different types of skin conditions, including cancerous and non-cancerous lesions.
+                </p>
+                <p>
+                    The system uses a publicly available labeled dataset, follows a complete training pipeline—from 
+                    data preprocessing and model selection to training, validation, and evaluation—and provides 
+                    meaningful insights into model performance.
+                </p>
+            </div>
+
+            <div class="content-card">
+                <h2><i class="fas fa-lightbulb"></i> Solution Overview</h2>
+                <p>
+                    We propose a deep learning–based image classification system for skin cancer detection using 
+                    Convolutional Neural Networks (CNNs). The solution uses a publicly available, labeled skin 
+                    lesion dataset to train the model to learn visual patterns associated with different skin conditions.
+                </p>
+                <p><strong>Key Components:</strong></p>
+                <ul>
+                    <li>Image preprocessing and data augmentation</li>
+                    <li>Transfer learning with pre-trained models (EfficientNet, ResNet, VGG16, MobileNet)</li>
+                    <li>Systematic training and validation pipeline</li>
+                    <li>Comprehensive model evaluation with metrics</li>
+                    <li>Web-based deployment for easy access</li>
+                </ul>
+            </div>
+
+            <div class="content-card">
+                <h2><i class="fas fa-cogs"></i> Technical Architecture</h2>
+                <div class="tech-details">
+                    <div class="tech-item">
+                        <h4>Model Architecture</h4>
+                        <p>Convolutional Neural Networks with transfer learning from ImageNet pre-trained models</p>
+                    </div>
+                    <div class="tech-item">
+                        <h4>Framework</h4>
+                        <p>TensorFlow & Keras for deep learning, Flask for web application</p>
+                    </div>
+                    <div class="tech-item">
+                        <h4>Input</h4>
+                        <p>RGB images of skin lesions (224×224 pixels)</p>
+                    </div>
+                    <div class="tech-item">
+                        <h4>Output</h4>
+                        <p>Classification into benign or malignant with confidence scores</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-card">
+                <h2><i class="fas fa-graduation-cap"></i> Training Pipeline</h2>
+                <ol class="pipeline-steps">
+                    <li><strong>Data Collection:</strong> Publicly available skin lesion datasets</li>
+                    <li><strong>Preprocessing:</strong> Image resizing, normalization, and augmentation</li>
+                    <li><strong>Model Selection:</strong> Transfer learning with pre-trained CNNs</li>
+                    <li><strong>Training:</strong> Supervised learning with labeled data</li>
+                    <li><strong>Validation:</strong> Performance monitoring during training</li>
+                    <li><strong>Evaluation:</strong> Testing on held-out data with multiple metrics</li>
+                    <li><strong>Deployment:</strong> Web application for practical use</li>
+                </ol>
+            </div>
+
+            <div class="content-card">
+                <h2><i class="fas fa-users"></i> Team Information</h2>
+                <p><strong>Team Name:</strong> Dr. Homi Jehangir Bhabha</p>
+                <p>
+                    Named after the pioneering Indian nuclear physicist who founded the Tata Institute of 
+                    Fundamental Research, our team brings together expertise in machine learning, computer 
+                    vision, and healthcare applications to create impactful AI solutions.
+                </p>
+            </div>
+
+            <div class="content-card disclaimer-card">
+                <h2><i class="fas fa-exclamation-triangle"></i> Medical Disclaimer</h2>
+                <p>
+                    This system is designed for educational and research purposes only. It is not a substitute 
+                    for professional medical advice, diagnosis, or treatment. Always seek the advice of qualified 
+                    healthcare providers with any questions regarding medical conditions. Never disregard 
+                    professional medical advice or delay seeking it because of results from this application.
+                </p>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h3>Ready to Try?</h3>
+            <p>Upload a skin lesion image to get AI-powered analysis</p>
+            <a href="/" class="btn-primary">
+                <i class="fas fa-arrow-left"></i> Go to Analysis Tool
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Dr. Homi Jehangir Bhabha Team | Problem Statement PS 18</p>
+            <p>Deep Learning Image Classification for Healthcare</p>
+        </div>
+    </footer>
+</body>
+</html>
