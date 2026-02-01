@@ -3,8 +3,9 @@
 <div align="center">
 
 ![Python](https://img.shields.io/badge/python-v3.8+-blue.svg)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-2.13.0-orange.svg)
-![Flask](https://img.shields.io/badge/Flask-2.3.0-green.svg)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.15.0-orange.svg)
+![Flask](https://img.shields.io/badge/Flask-2.3.3-green.svg)
+![Security](https://img.shields.io/badge/security-patched-brightgreen.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
 **Deep Learning Image Classification for Healthcare**
